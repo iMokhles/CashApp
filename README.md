@@ -38,4 +38,4 @@ If you discover any security related issues, please email imokhles@imokhles.com 
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The GNU General Public License v3.0 LICENSE License. Please see [License File](LICENSE) for more information.
