@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0HX-gq-IeO">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation View Controller-->
+        <scene sceneID="c7I-5l-X9e">
+            <objects>
+                <navigationController storyboardIdentifier="homeNVC" id="Mrm-Tu-Jeu" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HJI-Zt-tff">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1yU-12-bGQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKs-Ts-JXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-981" y="133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="homeVC" id="BYZ-38-t0r" customClass="ViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jFO-4K-t5p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="133"/>
+        </scene>
+        <!--Navigation Menu View Controller-->
+        <scene sceneID="DDC-MM-uan">
+            <objects>
+                <viewController storyboardIdentifier="NavigationMenu" id="rBQ-7B-NG6" customClass="NavigationMenuViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k8I-oF-K1b"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDc-3n-7o2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bCz-nd-sPl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="J79-64-qa9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OsN-PW-2yS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.0" green="0.62352941179999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="xbF-ig-HNf" customClass="MenuHeader" customModule="CashApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LRv-7k-SNn">
+                                            <rect key="frame" x="8" y="20" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="NXd-Mw-CYx"/>
+                                                <constraint firstAttribute="width" constant="60" id="Rl0-Y4-8Tn"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mokhlas Hussein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-1P-KUR">
+                                            <rect key="frame" x="76" y="29" width="196" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="Td5-r9-hf4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email_demo@test.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-BN-Eyy">
+                                            <rect key="frame" x="76" y="54" width="196" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="d8p-xK-1NA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="WLv-1P-KUR" firstAttribute="leading" secondItem="LRv-7k-SNn" secondAttribute="trailing" constant="8" id="0bd-f2-lTG"/>
+                                        <constraint firstItem="LRv-7k-SNn" firstAttribute="leading" secondItem="xbF-ig-HNf" secondAttribute="leading" constant="8" id="6wV-BR-ps4"/>
+                                        <constraint firstAttribute="trailing" secondItem="fSO-BN-Eyy" secondAttribute="trailing" constant="48" id="F4k-9M-MuH"/>
+                                        <constraint firstItem="fSO-BN-Eyy" firstAttribute="top" secondItem="WLv-1P-KUR" secondAttribute="bottom" constant="-5" id="KVF-1n-f2C"/>
+                                        <constraint firstItem="LRv-7k-SNn" firstAttribute="top" secondItem="xbF-ig-HNf" secondAttribute="top" constant="20" id="NjW-OQ-3wO"/>
+                                        <constraint firstItem="WLv-1P-KUR" firstAttribute="top" secondItem="xbF-ig-HNf" secondAttribute="top" constant="29" id="XV6-rp-J8y"/>
+                                        <constraint firstAttribute="trailing" secondItem="WLv-1P-KUR" secondAttribute="trailing" constant="48" id="hoR-H2-5T2"/>
+                                        <constraint firstItem="fSO-BN-Eyy" firstAttribute="leading" secondItem="LRv-7k-SNn" secondAttribute="trailing" constant="8" id="kuJ-i9-cRt"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="avatarView" destination="LRv-7k-SNn" id="yfq-3B-EZv"/>
+                                        <outlet property="bottomLabel" destination="fSO-BN-Eyy" id="eb5-r6-IGB"/>
+                                        <outlet property="topLabel" destination="WLv-1P-KUR" id="qgu-E4-Egh"/>
+                                    </connections>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuCell" rowHeight="70" id="gj6-a6-Knr" customClass="MenuCell" customModule="CashApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="128" width="320" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gj6-a6-Knr" id="Fai-kt-h0A">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3J-Ik-1Tl">
+                                                    <rect key="frame" x="50" y="18" width="191" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1EG-K1-NWb">
+                                                    <rect key="frame" x="15" y="23" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="cGU-8W-RiC"/>
+                                                        <constraint firstAttribute="height" constant="25" id="rl1-pq-FJW"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="1EG-K1-NWb" secondAttribute="bottom" constant="21.5" id="8Ob-UD-GaW"/>
+                                                <constraint firstItem="1EG-K1-NWb" firstAttribute="leading" secondItem="Fai-kt-h0A" secondAttribute="leading" constant="15" id="E3m-Da-c3T"/>
+                                                <constraint firstAttribute="bottom" secondItem="D3J-Ik-1Tl" secondAttribute="bottom" constant="16.5" id="Lt4-kE-o8w"/>
+                                                <constraint firstAttribute="trailing" secondItem="D3J-Ik-1Tl" secondAttribute="trailing" constant="79" id="YqS-89-Ba1"/>
+                                                <constraint firstItem="D3J-Ik-1Tl" firstAttribute="top" secondItem="Fai-kt-h0A" secondAttribute="top" constant="18" id="oGn-Qd-vW2"/>
+                                                <constraint firstItem="D3J-Ik-1Tl" firstAttribute="leading" secondItem="1EG-K1-NWb" secondAttribute="trailing" constant="10" id="wNG-iQ-j5M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="cellIcon" destination="1EG-K1-NWb" id="Kr0-tF-sNM"/>
+                                            <outlet property="cellTitle" destination="D3J-Ik-1Tl" id="Zyb-uI-w9E"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rBQ-7B-NG6" id="ht5-3G-OUI"/>
+                                    <outlet property="delegate" destination="rBQ-7B-NG6" id="lDY-Ng-XvT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.62352941176470589" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="J79-64-qa9" secondAttribute="bottom" id="4Ru-Df-ZmF"/>
+                            <constraint firstItem="J79-64-qa9" firstAttribute="top" secondItem="bCz-nd-sPl" secondAttribute="top" id="7Qv-pA-Ckg"/>
+                            <constraint firstItem="OsN-PW-2yS" firstAttribute="trailing" secondItem="2ag-fj-kql" secondAttribute="trailing" id="9EW-sX-n51"/>
+                            <constraint firstItem="OsN-PW-2yS" firstAttribute="leading" secondItem="2ag-fj-kql" secondAttribute="leading" id="YQb-Za-VXb"/>
+                            <constraint firstItem="2ag-fj-kql" firstAttribute="trailing" secondItem="J79-64-qa9" secondAttribute="trailing" id="jjh-kF-u4u"/>
+                            <constraint firstItem="OsN-PW-2yS" firstAttribute="top" secondItem="bCz-nd-sPl" secondAttribute="top" id="uun-2G-g5R"/>
+                            <constraint firstItem="J79-64-qa9" firstAttribute="leading" secondItem="2ag-fj-kql" secondAttribute="leading" id="wM6-wJ-H0e"/>
+                            <constraint firstAttribute="bottom" secondItem="OsN-PW-2yS" secondAttribute="bottom" id="yia-Y0-jB2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2ag-fj-kql"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableHeader" destination="xbF-ig-HNf" id="BQf-KG-IiF"/>
+                        <outlet property="tableView" destination="OsN-PW-2yS" id="TKC-cC-qrs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1E-sb-JPL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1771.875" y="133.09859154929578"/>
+        </scene>
+        <!--Host View Controller-->
+        <scene sceneID="RPF-zp-onm">
+            <objects>
+                <viewController id="0HX-gq-IeO" customClass="HostViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hWW-VZ-RkY"/>
+                        <viewControllerLayoutGuide type="bottom" id="afZ-PX-biZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LFR-en-JOv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="awP-gX-2nW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aex-pM-689" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1809" y="833"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="scd-xw-wc1">
+            <objects>
+                <navigationController storyboardIdentifier="offersNVC" id="6YC-dz-XR7" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yu8-ET-NAD">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WVt-nF-xVb" kind="relationship" relationship="rootViewController" id="xJ3-8E-DOj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjD-5M-h7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="133"/>
+        </scene>
+        <!--Offers View Controller-->
+        <scene sceneID="8HX-oD-jUq">
+            <objects>
+                <viewController storyboardIdentifier="offersVC" id="WVt-nF-xVb" customClass="OffersViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QhR-8s-5KH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oM3-55-5iJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="offerCell" rowHeight="116" id="uUX-UH-RVD" customClass="OfferCell" customModule="CashApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="116"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uUX-UH-RVD" id="0Gu-Pd-xEY">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="115.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TxR-sW-y2a">
+                                                    <rect key="frame" x="3" y="3" width="314" height="109.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar-icon" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-eV-6Uv">
+                                                    <rect key="frame" x="15" y="11" width="58" height="58"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="58" id="QJB-hr-3K3"/>
+                                                        <constraint firstAttribute="width" constant="58" id="RDn-wT-xpd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.80$" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN2-ek-3QG">
+                                                    <rect key="frame" x="247" y="8" width="65" height="99.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="yxh-Eh-5PU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click &amp; Earn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-dG-uOf">
+                                                    <rect key="frame" x="81" y="11" width="158" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="xxN-hD-DT6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyg-Vf-En7" customClass="CosmosView" customModule="CashApp" customModuleProvider="target">
+                                                    <rect key="frame" x="81" y="36" width="100" height="17"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="6nZ-Bm-gRq"/>
+                                                        <constraint firstAttribute="height" constant="17" id="eMR-dV-Qa9"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUv-qo-uT3" customClass="LGButton" customModule="CashApp" customModuleProvider="target">
+                                                    <rect key="frame" x="81" y="80" width="85" height="25"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="46r-TH-ral"/>
+                                                        <constraint firstAttribute="width" constant="85" id="SVp-42-0tA"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                            <color key="value" red="0.0" green="0.62352941179999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Send Email"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="emailButtonTapped:" destination="uUX-UH-RVD" eventType="touchUpInside" id="ece-ZC-JtH"/>
+                                                    </connections>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ize-h8-drN" customClass="LGButton" customModule="CashApp" customModuleProvider="target">
+                                                    <rect key="frame" x="174" y="80" width="61" height="25"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="E8V-kv-nLU"/>
+                                                        <constraint firstAttribute="width" constant="61" id="WFj-A6-Vze"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                            <color key="value" red="0.0" green="0.62352941179999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Details"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="detailButtonTapped:" destination="uUX-UH-RVD" eventType="touchUpInside" id="hJG-Et-fwi"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ize-h8-drN" firstAttribute="leading" secondItem="tUv-qo-uT3" secondAttribute="trailing" constant="8" id="4My-1U-Mam"/>
+                                                <constraint firstItem="tUv-qo-uT3" firstAttribute="leading" secondItem="0Gu-Pd-xEY" secondAttribute="leading" constant="81" id="8GU-NQ-ibz"/>
+                                                <constraint firstItem="QN2-ek-3QG" firstAttribute="leading" secondItem="ahb-dG-uOf" secondAttribute="trailing" constant="8" id="9gX-Lr-9Fe"/>
+                                                <constraint firstItem="GmM-eV-6Uv" firstAttribute="leading" secondItem="0Gu-Pd-xEY" secondAttribute="leading" constant="15" id="AEz-Vd-AXG"/>
+                                                <constraint firstAttribute="bottom" secondItem="tUv-qo-uT3" secondAttribute="bottom" constant="10.5" id="Hdp-4K-yES"/>
+                                                <constraint firstAttribute="bottom" secondItem="QN2-ek-3QG" secondAttribute="bottom" constant="8" id="Kpw-0p-t7Z"/>
+                                                <constraint firstAttribute="bottom" secondItem="TxR-sW-y2a" secondAttribute="bottom" constant="3" id="MV1-dc-Hwo"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ize-h8-drN" secondAttribute="bottom" constant="10.5" id="PkP-Ku-Rk9"/>
+                                                <constraint firstAttribute="trailing" secondItem="QN2-ek-3QG" secondAttribute="trailing" constant="8" id="Vd3-d1-0Sc"/>
+                                                <constraint firstItem="Oyg-Vf-En7" firstAttribute="leading" secondItem="GmM-eV-6Uv" secondAttribute="trailing" constant="8" id="Ws7-nr-9UP"/>
+                                                <constraint firstItem="ahb-dG-uOf" firstAttribute="top" secondItem="0Gu-Pd-xEY" secondAttribute="top" constant="11" id="X0f-5E-gld"/>
+                                                <constraint firstItem="QN2-ek-3QG" firstAttribute="top" secondItem="0Gu-Pd-xEY" secondAttribute="top" constant="8" id="Xbf-Xi-jQC"/>
+                                                <constraint firstItem="TxR-sW-y2a" firstAttribute="leading" secondItem="0Gu-Pd-xEY" secondAttribute="leading" constant="3" id="bCw-Zp-2BQ"/>
+                                                <constraint firstItem="Oyg-Vf-En7" firstAttribute="top" secondItem="ahb-dG-uOf" secondAttribute="bottom" constant="-1" id="hog-fa-NGW"/>
+                                                <constraint firstItem="GmM-eV-6Uv" firstAttribute="top" secondItem="0Gu-Pd-xEY" secondAttribute="top" constant="11" id="iAl-rR-HA1"/>
+                                                <constraint firstItem="TxR-sW-y2a" firstAttribute="top" secondItem="0Gu-Pd-xEY" secondAttribute="top" constant="3" id="iGM-vV-Pgt"/>
+                                                <constraint firstAttribute="trailing" secondItem="TxR-sW-y2a" secondAttribute="trailing" constant="3" id="lC7-qS-GD2"/>
+                                                <constraint firstItem="ahb-dG-uOf" firstAttribute="leading" secondItem="GmM-eV-6Uv" secondAttribute="trailing" constant="8" id="xr0-9c-vKY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bgView" destination="TxR-sW-y2a" id="skI-0y-ln3"/>
+                                            <outlet property="detailsBtn" destination="Ize-h8-drN" id="jgg-xB-f4h"/>
+                                            <outlet property="offerIcon" destination="GmM-eV-6Uv" id="slG-aF-DIA"/>
+                                            <outlet property="offerPrice" destination="QN2-ek-3QG" id="Nxn-SN-6w8"/>
+                                            <outlet property="offerStars" destination="Oyg-Vf-En7" id="n2d-2f-ts4"/>
+                                            <outlet property="offerTitle" destination="ahb-dG-uOf" id="gzf-Xy-zNS"/>
+                                            <outlet property="submitEmailBtn" destination="tUv-qo-uT3" id="48I-97-XI1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WVt-nF-xVb" id="6bw-nW-7bD"/>
+                                    <outlet property="delegate" destination="WVt-nF-xVb" id="vIq-cU-aL7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oM3-55-5iJ" firstAttribute="bottom" secondItem="GMK-QZ-nV9" secondAttribute="bottom" id="3M8-7U-Ktf"/>
+                            <constraint firstItem="GMK-QZ-nV9" firstAttribute="trailing" secondItem="oM3-55-5iJ" secondAttribute="trailing" id="Nin-GG-9Vk"/>
+                            <constraint firstItem="oM3-55-5iJ" firstAttribute="leading" secondItem="GMK-QZ-nV9" secondAttribute="leading" id="fYz-1j-GKf"/>
+                            <constraint firstItem="oM3-55-5iJ" firstAttribute="top" secondItem="QhR-8s-5KH" secondAttribute="top" id="u8W-m0-f3U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GMK-QZ-nV9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nx4-oH-HiK"/>
+                    <connections>
+                        <outlet property="tableView" destination="oM3-55-5iJ" id="yxb-gz-95h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOG-6k-dhh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415.625" y="132.04225352112675"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="jVo-9g-8vO">
+            <objects>
+                <navigationController storyboardIdentifier="myEarningNVC" id="5D3-VO-w1I" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ihw-Vz-tss">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wXx-fd-sYe" kind="relationship" relationship="rootViewController" id="tM1-pi-VsO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hq5-VM-zYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-983" y="858"/>
+        </scene>
+        <!--My Earning View Controller-->
+        <scene sceneID="zJf-1Z-tz2">
+            <objects>
+                <viewController storyboardIdentifier="myEarningVC" id="wXx-fd-sYe" customClass="MyEarningViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OEB-8S-gGT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDG-Ko-v1q" customClass="CASegmentio" customModule="CashApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="320" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="anr-gI-QVd"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uW3-eB-qy8">
+                                <rect key="frame" x="0.0" y="119" width="320" height="449"/>
+                                <connections>
+                                    <segue destination="FmG-PO-ALB" kind="embed" id="VBz-nY-WeV"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXd-0I-8fi">
+                                <rect key="frame" x="0.0" y="119" width="320" height="449"/>
+                                <connections>
+                                    <segue destination="zDY-99-LHF" kind="embed" id="zab-aY-8be"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcT-hT-DBI">
+                                <rect key="frame" x="0.0" y="119" width="320" height="449"/>
+                                <connections>
+                                    <segue destination="rBO-WT-b9F" kind="embed" id="0Oc-LQ-GJE"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WXd-0I-8fi" firstAttribute="top" secondItem="qDG-Ko-v1q" secondAttribute="bottom" id="2qv-Bb-xHy"/>
+                            <constraint firstItem="skW-xZ-GvN" firstAttribute="trailing" secondItem="uW3-eB-qy8" secondAttribute="trailing" id="3K2-rO-Ya4"/>
+                            <constraint firstAttribute="bottom" secondItem="WXd-0I-8fi" secondAttribute="bottom" id="6XG-1B-na1"/>
+                            <constraint firstItem="qDG-Ko-v1q" firstAttribute="top" secondItem="skW-xZ-GvN" secondAttribute="top" id="E42-gp-ozL"/>
+                            <constraint firstItem="WXd-0I-8fi" firstAttribute="leading" secondItem="skW-xZ-GvN" secondAttribute="leading" id="GPb-IE-kv4"/>
+                            <constraint firstItem="gcT-hT-DBI" firstAttribute="top" secondItem="qDG-Ko-v1q" secondAttribute="bottom" id="KXe-7v-sah"/>
+                            <constraint firstItem="uW3-eB-qy8" firstAttribute="top" secondItem="qDG-Ko-v1q" secondAttribute="bottom" id="XXh-dM-lz3"/>
+                            <constraint firstItem="qDG-Ko-v1q" firstAttribute="leading" secondItem="skW-xZ-GvN" secondAttribute="leading" id="Xsy-E8-UJv"/>
+                            <constraint firstAttribute="trailing" secondItem="gcT-hT-DBI" secondAttribute="trailing" id="bZU-zN-jbv"/>
+                            <constraint firstItem="uW3-eB-qy8" firstAttribute="leading" secondItem="skW-xZ-GvN" secondAttribute="leading" id="bdI-u1-t63"/>
+                            <constraint firstItem="skW-xZ-GvN" firstAttribute="bottom" secondItem="uW3-eB-qy8" secondAttribute="bottom" id="f3f-GA-gFy"/>
+                            <constraint firstAttribute="bottom" secondItem="gcT-hT-DBI" secondAttribute="bottom" id="f7N-oa-aKh"/>
+                            <constraint firstAttribute="trailing" secondItem="WXd-0I-8fi" secondAttribute="trailing" id="ngx-du-k42"/>
+                            <constraint firstItem="gcT-hT-DBI" firstAttribute="leading" secondItem="skW-xZ-GvN" secondAttribute="leading" id="p1i-Mh-7Ok"/>
+                            <constraint firstItem="qDG-Ko-v1q" firstAttribute="trailing" secondItem="skW-xZ-GvN" secondAttribute="trailing" id="pGH-oS-qP0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="skW-xZ-GvN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cEt-46-gHj"/>
+                    <connections>
+                        <outlet property="scontentView1" destination="uW3-eB-qy8" id="0uJ-Dd-ubB"/>
+                        <outlet property="scontentView2" destination="WXd-0I-8fi" id="3DH-ZY-79X"/>
+                        <outlet property="scontentView3" destination="gcT-hT-DBI" id="F8p-jv-b4b"/>
+                        <outlet property="segmentioView" destination="qDG-Ko-v1q" id="9ET-BR-DlB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lh-SC-mhY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-189.375" y="857.74647887323943"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="vv0-FZ-AAv">
+            <objects>
+                <navigationController storyboardIdentifier="shareNVC" id="mof-3N-nfa" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sdd-Vo-CGN">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c4F-5B-hAR" kind="relationship" relationship="rootViewController" id="WfO-7w-zQl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFA-Hu-Mla" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="858"/>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="8uY-ab-C6T">
+            <objects>
+                <viewController storyboardIdentifier="shareVC" id="c4F-5B-hAR" customClass="ShareViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7rl-9f-ov3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Xle-U7-ZcZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ud3-WZ-8RA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0E-Qg-Kdg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="858"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="j2G-d0-R6M">
+            <objects>
+                <navigationController storyboardIdentifier="promoteYourAppNVC" id="5uO-p4-cfy" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g6k-kH-yeg">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cLX-SU-609" kind="relationship" relationship="rootViewController" id="jZc-LY-3U9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMk-xV-SQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-983" y="1621"/>
+        </scene>
+        <!--Promote Your App View Controller-->
+        <scene sceneID="BhG-Yy-Lvc">
+            <objects>
+                <viewController storyboardIdentifier="promoteYourAppVC" id="cLX-SU-609" customClass="PromoteYourAppViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gd3-cC-WfB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="XY8-Ga-4Qq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tub-8O-gEg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrB-gC-9RN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="1621"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="7O0-6u-k5e">
+            <objects>
+                <navigationController storyboardIdentifier="rankingNVC" id="u3d-tj-PU4" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dD8-KW-QWH">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uIP-j9-aB3" kind="relationship" relationship="rootViewController" id="HaD-gw-Hea"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2W-EW-8im" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="1621"/>
+        </scene>
+        <!--Ranking View Controller-->
+        <scene sceneID="LAI-rY-agb">
+            <objects>
+                <viewController storyboardIdentifier="rankingVC" id="uIP-j9-aB3" customClass="RankingViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="REG-fA-ZxN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-p7-CbV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rankCell" rowHeight="80" id="WMj-Uo-y0o" customClass="RankCell" customModule="CashApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WMj-Uo-y0o" id="S91-c4-KbA">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold-medal" translatesAutoresizingMaskIntoConstraints="NO" id="zDO-gF-Smg">
+                                                    <rect key="frame" x="270" y="22" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="3Ms-zm-zyc"/>
+                                                        <constraint firstAttribute="height" constant="35" id="TDL-Me-2UA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold-medal" translatesAutoresizingMaskIntoConstraints="NO" id="Hzh-jV-bEj">
+                                                    <rect key="frame" x="15" y="10" width="58" height="58"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="58" id="bcY-8u-99k"/>
+                                                        <constraint firstAttribute="height" constant="58" id="gbY-hQ-Y05"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elI-Ub-bpF">
+                                                    <rect key="frame" x="81" y="20" width="181" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="27" id="WeQ-9e-1Vz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grY-1w-FwK">
+                                                    <rect key="frame" x="81" y="45" width="181" height="13"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="13" id="Ip0-7a-wXN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25-09-2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynz-hY-HN1">
+                                                    <rect key="frame" x="81" y="2" width="231" height="13"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="13" id="QOe-1x-soJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zDO-gF-Smg" firstAttribute="leading" secondItem="grY-1w-FwK" secondAttribute="trailing" constant="8" id="1Pr-UB-FX1"/>
+                                                <constraint firstItem="Ynz-hY-HN1" firstAttribute="top" secondItem="S91-c4-KbA" secondAttribute="top" constant="2" id="5V5-yt-2GY"/>
+                                                <constraint firstItem="Hzh-jV-bEj" firstAttribute="top" secondItem="S91-c4-KbA" secondAttribute="top" constant="10" id="87w-tJ-C86"/>
+                                                <constraint firstItem="zDO-gF-Smg" firstAttribute="top" secondItem="S91-c4-KbA" secondAttribute="top" constant="22" id="BQi-lJ-Vd0"/>
+                                                <constraint firstItem="grY-1w-FwK" firstAttribute="top" secondItem="elI-Ub-bpF" secondAttribute="bottom" constant="-2" id="F6a-m3-VQa"/>
+                                                <constraint firstAttribute="trailing" secondItem="zDO-gF-Smg" secondAttribute="trailing" constant="15" id="Fiu-Cu-Rqo"/>
+                                                <constraint firstItem="elI-Ub-bpF" firstAttribute="top" secondItem="S91-c4-KbA" secondAttribute="top" constant="20" id="MlK-SA-jSW"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ynz-hY-HN1" secondAttribute="trailing" constant="8" id="Uim-bB-WPk"/>
+                                                <constraint firstItem="Hzh-jV-bEj" firstAttribute="leading" secondItem="S91-c4-KbA" secondAttribute="leading" constant="15" id="aEf-9o-ilp"/>
+                                                <constraint firstItem="zDO-gF-Smg" firstAttribute="leading" secondItem="elI-Ub-bpF" secondAttribute="trailing" constant="8" id="dyv-IL-V2n"/>
+                                                <constraint firstItem="elI-Ub-bpF" firstAttribute="leading" secondItem="Hzh-jV-bEj" secondAttribute="trailing" constant="8" id="eWu-2h-EEt"/>
+                                                <constraint firstItem="grY-1w-FwK" firstAttribute="leading" secondItem="Hzh-jV-bEj" secondAttribute="trailing" constant="8" id="hqY-tS-j6e"/>
+                                                <constraint firstItem="Ynz-hY-HN1" firstAttribute="leading" secondItem="Hzh-jV-bEj" secondAttribute="trailing" constant="8" id="vbS-pT-31Q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="rankDate" destination="Ynz-hY-HN1" id="2zN-6n-EVF"/>
+                                            <outlet property="rankIcon" destination="zDO-gF-Smg" id="C9y-bz-4ac"/>
+                                            <outlet property="userAvatar" destination="Hzh-jV-bEj" id="Tds-uG-rkE"/>
+                                            <outlet property="userBalance" destination="grY-1w-FwK" id="Dvk-Em-v1l"/>
+                                            <outlet property="userName" destination="elI-Ub-bpF" id="xoy-6i-Pef"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uIP-j9-aB3" id="6te-Pu-s96"/>
+                                    <outlet property="delegate" destination="uIP-j9-aB3" id="F5v-9G-F2J"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hqc-p7-CbV" firstAttribute="trailing" secondItem="h10-Vh-5wY" secondAttribute="trailing" id="1ic-P7-oWu"/>
+                            <constraint firstItem="hqc-p7-CbV" firstAttribute="top" secondItem="REG-fA-ZxN" secondAttribute="top" id="PfE-cM-7bz"/>
+                            <constraint firstItem="hqc-p7-CbV" firstAttribute="bottom" secondItem="h10-Vh-5wY" secondAttribute="bottom" id="qMj-YJ-Kb3"/>
+                            <constraint firstItem="hqc-p7-CbV" firstAttribute="leading" secondItem="h10-Vh-5wY" secondAttribute="leading" id="xvX-C6-QQf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h10-Vh-5wY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kMg-lk-JDn"/>
+                    <connections>
+                        <outlet property="tableView" destination="hqc-p7-CbV" id="Hou-pW-ieB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifs-7W-bjg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417.5" y="1620.4225352112676"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="7CF-e4-RD8">
+            <objects>
+                <navigationController storyboardIdentifier="faqNVC" id="WDb-fz-t3U" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bqb-fO-xJF">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AlU-ok-fpv" kind="relationship" relationship="rootViewController" id="Nnn-z8-z9T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VmN-yc-xqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-983" y="2351"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Ew-OX-tcL">
+            <objects>
+                <viewController storyboardIdentifier="faqVC" id="AlU-ok-fpv" customClass="FAQViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wcI-0i-rZE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="kbj-9f-hX5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mJp-0x-dnr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knB-Pg-30P" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="2351"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="2hc-UL-fE6">
+            <objects>
+                <navigationController storyboardIdentifier="contactUsNVC" id="6eK-Oe-OYf" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ruc-e0-Toc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Lff-Za-YY5" kind="relationship" relationship="rootViewController" id="Tda-Xl-DVU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRt-mM-DpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="2351"/>
+        </scene>
+        <!--Contact Us View Controller-->
+        <scene sceneID="wc0-Cs-eDj">
+            <objects>
+                <viewController storyboardIdentifier="contactUsVC" id="Lff-Za-YY5" customClass="ContactUsViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="obg-SK-MPt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaI-eT-zDY">
+                                <rect key="frame" x="16" y="109" width="288" height="350"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3h-gb-aWr" customClass="CAView" customModule="CashApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="20" width="272" height="44"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-4k-lvV">
+                                                <rect key="frame" x="8" y="38" width="256" height="2"/>
+                                                <color key="backgroundColor" red="0.27450980390000002" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="jeo-Kc-bTa"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BnU-It-mVt">
+                                                <rect key="frame" x="10" y="7" width="252" height="30"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="XMt-4k-lvV" secondAttribute="trailing" constant="8" id="9jA-ID-8CV"/>
+                                            <constraint firstAttribute="bottom" secondItem="XMt-4k-lvV" secondAttribute="bottom" constant="4" id="ONv-sX-aqD"/>
+                                            <constraint firstItem="BnU-It-mVt" firstAttribute="leading" secondItem="O3h-gb-aWr" secondAttribute="leading" constant="10" id="Y2L-cq-LfF"/>
+                                            <constraint firstItem="XMt-4k-lvV" firstAttribute="leading" secondItem="O3h-gb-aWr" secondAttribute="leading" constant="8" id="bem-ru-fJ2"/>
+                                            <constraint firstAttribute="height" constant="44" id="fzJ-3D-SE2"/>
+                                            <constraint firstItem="BnU-It-mVt" firstAttribute="top" secondItem="O3h-gb-aWr" secondAttribute="top" constant="7" id="jRR-Ns-9Os"/>
+                                            <constraint firstAttribute="trailing" secondItem="BnU-It-mVt" secondAttribute="trailing" constant="10" id="rSH-Y0-ld3"/>
+                                            <constraint firstAttribute="bottom" secondItem="BnU-It-mVt" secondAttribute="bottom" constant="7" id="vK7-nP-gbs"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGu-4G-Uap" customClass="CAView" customModule="CashApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="80" width="272" height="44"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hSO-CD-Ovl">
+                                                <rect key="frame" x="8" y="38" width="256" height="2"/>
+                                                <color key="backgroundColor" red="0.27450980390000002" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="qCS-eU-Bc3"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vos-RO-eJN">
+                                                <rect key="frame" x="10" y="7" width="252" height="30"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Vos-RO-eJN" firstAttribute="top" secondItem="WGu-4G-Uap" secondAttribute="top" constant="7" id="2X3-t3-zPS"/>
+                                            <constraint firstAttribute="bottom" secondItem="hSO-CD-Ovl" secondAttribute="bottom" constant="4" id="Mv1-uH-Efi"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vos-RO-eJN" secondAttribute="bottom" constant="7" id="RU5-zJ-EHt"/>
+                                            <constraint firstAttribute="trailing" secondItem="hSO-CD-Ovl" secondAttribute="trailing" constant="8" id="Sqz-We-cAt"/>
+                                            <constraint firstAttribute="height" constant="44" id="oIB-WK-6dg"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vos-RO-eJN" secondAttribute="trailing" constant="10" id="saK-Ku-dfU"/>
+                                            <constraint firstItem="Vos-RO-eJN" firstAttribute="leading" secondItem="WGu-4G-Uap" secondAttribute="leading" constant="10" id="uyZ-3g-Rtd"/>
+                                            <constraint firstItem="hSO-CD-Ovl" firstAttribute="leading" secondItem="WGu-4G-Uap" secondAttribute="leading" constant="8" id="wk4-qC-vBn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-nd-utO" customClass="CAView" customModule="CashApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="140" width="272" height="150"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ozf-Cc-XXa">
+                                                <rect key="frame" x="8" y="145" width="256" height="2"/>
+                                                <color key="backgroundColor" red="0.27450980390000002" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="13k-E8-2YS"/>
+                                                    <constraint firstAttribute="height" constant="2" id="4Hn-0h-HUG"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Message Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J2S-VY-eIm">
+                                                <rect key="frame" x="8" y="8" width="256" height="134"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="J2S-VY-eIm" firstAttribute="top" secondItem="wIx-nd-utO" secondAttribute="top" constant="8" id="50C-hX-y3E"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ozf-Cc-XXa" secondAttribute="trailing" constant="8" id="D7M-3V-ttC"/>
+                                            <constraint firstAttribute="height" constant="150" id="OaE-qz-hWk"/>
+                                            <constraint firstAttribute="bottom" secondItem="J2S-VY-eIm" secondAttribute="bottom" constant="8" id="RKI-IA-YrI"/>
+                                            <constraint firstItem="J2S-VY-eIm" firstAttribute="leading" secondItem="wIx-nd-utO" secondAttribute="leading" constant="8" id="fsU-eJ-89E"/>
+                                            <constraint firstItem="Ozf-Cc-XXa" firstAttribute="leading" secondItem="wIx-nd-utO" secondAttribute="leading" constant="8" id="hV7-ba-zAw"/>
+                                            <constraint firstAttribute="trailing" secondItem="J2S-VY-eIm" secondAttribute="trailing" constant="8" id="mTt-zz-Hqs"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ozf-Cc-XXa" secondAttribute="bottom" constant="3" id="tGw-Au-OEd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vP-Jy-Iao" customClass="LGButton" customModule="CashApp" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="298" width="272" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="0.27450980392156865" green="0.32941176470588235" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Send Message"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="O3h-gb-aWr" firstAttribute="leading" secondItem="XaI-eT-zDY" secondAttribute="leading" constant="8" id="0Jt-Tt-IXu"/>
+                                    <constraint firstAttribute="width" constant="288" id="3XX-ja-XJf"/>
+                                    <constraint firstAttribute="height" constant="350" id="5Ap-Vs-AiB"/>
+                                    <constraint firstItem="WGu-4G-Uap" firstAttribute="leading" secondItem="XaI-eT-zDY" secondAttribute="leading" constant="8" id="5Pv-is-lfA"/>
+                                    <constraint firstAttribute="trailing" secondItem="O3h-gb-aWr" secondAttribute="trailing" constant="8" id="Bfg-BX-q9V"/>
+                                    <constraint firstItem="O3h-gb-aWr" firstAttribute="top" secondItem="XaI-eT-zDY" secondAttribute="top" constant="20" id="Cho-VQ-YK2"/>
+                                    <constraint firstItem="wIx-nd-utO" firstAttribute="leading" secondItem="XaI-eT-zDY" secondAttribute="leading" constant="8" id="DkL-AL-YnB"/>
+                                    <constraint firstAttribute="trailing" secondItem="wIx-nd-utO" secondAttribute="trailing" constant="8" id="SbF-iD-IeF"/>
+                                    <constraint firstItem="wIx-nd-utO" firstAttribute="top" secondItem="WGu-4G-Uap" secondAttribute="bottom" constant="16" id="dP0-T0-Kqa"/>
+                                    <constraint firstItem="WGu-4G-Uap" firstAttribute="top" secondItem="O3h-gb-aWr" secondAttribute="bottom" constant="16" id="ooa-FZ-b2E"/>
+                                    <constraint firstAttribute="trailing" secondItem="WGu-4G-Uap" secondAttribute="trailing" constant="8" id="xPs-no-FRb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XaI-eT-zDY" firstAttribute="centerY" secondItem="obg-SK-MPt" secondAttribute="centerY" id="GmJ-79-pdk"/>
+                            <constraint firstItem="XaI-eT-zDY" firstAttribute="centerX" secondItem="obg-SK-MPt" secondAttribute="centerX" id="eZT-df-5Ho"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i6R-Eu-GKt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Ai-GN-iVu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAP-p7-yFN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417.5" y="2350.3521126760565"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="8Ga-B3-Sge">
+            <objects>
+                <navigationController storyboardIdentifier="facebookNVC" id="bMw-zm-sjW" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6MD-ZT-9KY">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hWo-Wc-v6h" kind="relationship" relationship="rootViewController" id="h4d-pH-sDX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPr-Ka-U1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-983" y="3098"/>
+        </scene>
+        <!--Facebook View Controller-->
+        <scene sceneID="UhX-W2-kvW">
+            <objects>
+                <viewController storyboardIdentifier="facebookVC" id="hWo-Wc-v6h" customClass="FacebookViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KFo-w6-Brf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84U-eP-e7T" customClass="CAWebView" customModule="CashApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="webSiteUrl" value="https://facebook.com"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="hWo-Wc-v6h" id="z8z-p9-R3z"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="84U-eP-e7T" firstAttribute="top" secondItem="KFo-w6-Brf" secondAttribute="top" id="3CO-Rq-7vO"/>
+                            <constraint firstItem="84U-eP-e7T" firstAttribute="leading" secondItem="7zv-kL-O5C" secondAttribute="leading" id="Dqn-vt-npL"/>
+                            <constraint firstItem="84U-eP-e7T" firstAttribute="trailing" secondItem="7zv-kL-O5C" secondAttribute="trailing" id="evU-bs-qLa"/>
+                            <constraint firstItem="84U-eP-e7T" firstAttribute="bottom" secondItem="7zv-kL-O5C" secondAttribute="bottom" id="viQ-EA-BjO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7zv-kL-O5C"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZaQ-5Z-NXX"/>
+                    <connections>
+                        <outlet property="webView" destination="84U-eP-e7T" id="Kl5-b2-4zf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ueX-Db-lK5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="3098"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="rOO-Er-ar6">
+            <objects>
+                <navigationController storyboardIdentifier="twitterNVC" id="beS-Av-78X" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hnn-4i-7KY">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Fq-lj-hP9" kind="relationship" relationship="rootViewController" id="CqA-uy-8D5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEK-kr-A7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="3098"/>
+        </scene>
+        <!--Twitter View Controller-->
+        <scene sceneID="uJZ-5Y-JRD">
+            <objects>
+                <viewController storyboardIdentifier="twitterVC" id="2Fq-lj-hP9" customClass="TwitterViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aRe-e3-ReP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejM-bA-jkp" customClass="CAWebView" customModule="CashApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="webSiteUrl" value="https://twitter.com"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="2Fq-lj-hP9" id="Xd2-1a-9rd"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ejM-bA-jkp" firstAttribute="top" secondItem="aRe-e3-ReP" secondAttribute="top" id="789-dw-Tle"/>
+                            <constraint firstItem="ejM-bA-jkp" firstAttribute="leading" secondItem="1Uz-V3-wsr" secondAttribute="leading" id="HMU-cx-gIP"/>
+                            <constraint firstItem="1Uz-V3-wsr" firstAttribute="trailing" secondItem="ejM-bA-jkp" secondAttribute="trailing" id="Woj-eX-qse"/>
+                            <constraint firstItem="ejM-bA-jkp" firstAttribute="bottom" secondItem="1Uz-V3-wsr" secondAttribute="bottom" id="lad-aA-xHv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Uz-V3-wsr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b9M-Lj-V2d"/>
+                    <connections>
+                        <outlet property="webView" destination="ejM-bA-jkp" id="4DE-fO-z8Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ua-Ow-fUC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417.5" y="3097.1830985915494"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="0Ez-Fl-oOg">
+            <objects>
+                <navigationController storyboardIdentifier="aboutUsNVC" id="UoC-dS-gDZ" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZSV-Dj-Nwm">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Liu-un-wq2" kind="relationship" relationship="rootViewController" id="YpO-7e-MZE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trL-jl-Eob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-984" y="3880"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="gSm-hw-fGV">
+            <objects>
+                <viewController storyboardIdentifier="aboutUsVC" id="Liu-un-wq2" customClass="AboutUsViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dhi-NM-wtR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWT-8w-cS9" customClass="CAView" customModule="CashApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="84" width="304" height="190"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyN-0y-Do9">
+                                        <rect key="frame" x="8" y="186" width="288" height="2"/>
+                                        <color key="backgroundColor" red="0.27450980390000002" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="R8z-Ji-oPR"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksy-mq-mvP">
+                                        <rect key="frame" x="8" y="8" width="288" height="174"/>
+                                        <string key="text">Cash App suggest offers that you can't refuse. 
+Download games, have fun and earn money!
+This website upload to change your life to happier
+So smile my friends.:)</string>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                        <color key="textColor" red="0.27450980390000002" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tyN-0y-Do9" secondAttribute="bottom" constant="2" id="4XT-IB-kdq"/>
+                                    <constraint firstAttribute="trailing" secondItem="tyN-0y-Do9" secondAttribute="trailing" constant="8" id="Yqo-fv-VdT"/>
+                                    <constraint firstAttribute="height" constant="190" id="fn3-pA-I5t"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ksy-mq-mvP" secondAttribute="bottom" constant="8" id="rWD-fN-Zvi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ksy-mq-mvP" secondAttribute="trailing" constant="8" id="tGt-xb-5oe"/>
+                                    <constraint firstItem="Ksy-mq-mvP" firstAttribute="leading" secondItem="RWT-8w-cS9" secondAttribute="leading" constant="8" id="uYv-0u-d00"/>
+                                    <constraint firstItem="Ksy-mq-mvP" firstAttribute="top" secondItem="RWT-8w-cS9" secondAttribute="top" constant="8" id="xcp-Xb-ieQ"/>
+                                    <constraint firstItem="tyN-0y-Do9" firstAttribute="leading" secondItem="RWT-8w-cS9" secondAttribute="leading" constant="8" id="y5Q-zZ-VKc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RWT-8w-cS9" firstAttribute="top" secondItem="Ld5-KX-mQc" secondAttribute="top" constant="20" id="6lg-up-1ag"/>
+                            <constraint firstItem="Ld5-KX-mQc" firstAttribute="trailing" secondItem="RWT-8w-cS9" secondAttribute="trailing" constant="8" id="E9i-RH-hgv"/>
+                            <constraint firstItem="RWT-8w-cS9" firstAttribute="leading" secondItem="Ld5-KX-mQc" secondAttribute="leading" constant="8" id="s7S-EV-5Cx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ld5-KX-mQc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pTq-kj-KKv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdJ-ki-ejQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-189.375" y="3879.929577464789"/>
+        </scene>
+        <!--Transactions View Controller-->
+        <scene sceneID="d98-6Q-9LK">
+            <objects>
+                <viewController id="FmG-PO-ALB" customClass="TransactionsViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sG7-lH-UZC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="449"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c3k-h4-hvS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="449"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="transCell" rowHeight="80" id="f8K-1o-GBN" customClass="TransCell" customModule="CashApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f8K-1o-GBN" id="seB-rp-DHw">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number_one" translatesAutoresizingMaskIntoConstraints="NO" id="Lel-nc-D6b">
+                                                    <rect key="frame" x="15" y="11" width="58" height="58"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="58" id="RU6-7k-hWQ"/>
+                                                        <constraint firstAttribute="height" constant="58" id="a37-Rf-856"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dW-2l-YbI" customClass="CAView" customModule="CashApp" customModuleProvider="target">
+                                                    <rect key="frame" x="232" y="51.5" width="80" height="20"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhs-51-2gK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.41960784313725491" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="ETT-jo-dPB"/>
+                                                        <constraint firstItem="Mhs-51-2gK" firstAttribute="top" secondItem="2dW-2l-YbI" secondAttribute="top" id="P5Q-wf-14o"/>
+                                                        <constraint firstItem="Mhs-51-2gK" firstAttribute="leading" secondItem="2dW-2l-YbI" secondAttribute="leading" id="gOU-cr-hPg"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Mhs-51-2gK" secondAttribute="bottom" id="icw-6L-boS"/>
+                                                        <constraint firstAttribute="height" constant="20" id="nr3-bo-Db6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Mhs-51-2gK" secondAttribute="trailing" id="rRJ-jE-zlg"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.10$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtA-aO-Oys">
+                                                    <rect key="frame" x="251" y="29" width="42" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="5T8-C0-nlk"/>
+                                                        <constraint firstAttribute="height" constant="20" id="jai-9q-6QL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish Registration" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnW-a3-7MT">
+                                                    <rect key="frame" x="81" y="21" width="162" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="Nab-5j-0Jt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25-01-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8N-yl-VcA">
+                                                    <rect key="frame" x="81" y="46" width="143" height="13"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="13" id="Q45-4Q-uze"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2dW-2l-YbI" firstAttribute="top" secondItem="gtA-aO-Oys" secondAttribute="bottom" constant="2.5" id="56z-Xn-9oz"/>
+                                                <constraint firstAttribute="trailing" secondItem="2dW-2l-YbI" secondAttribute="trailing" constant="8" id="CLq-G2-VJC"/>
+                                                <constraint firstItem="2dW-2l-YbI" firstAttribute="leading" secondItem="o8N-yl-VcA" secondAttribute="trailing" constant="8" id="Dvk-Ey-qxm"/>
+                                                <constraint firstItem="Lel-nc-D6b" firstAttribute="top" secondItem="seB-rp-DHw" secondAttribute="top" constant="11" id="Kig-uV-8fD"/>
+                                                <constraint firstItem="o8N-yl-VcA" firstAttribute="top" secondItem="FnW-a3-7MT" secondAttribute="bottom" constant="-6" id="L7f-qb-gE5"/>
+                                                <constraint firstItem="FnW-a3-7MT" firstAttribute="leading" secondItem="Lel-nc-D6b" secondAttribute="trailing" constant="8" id="NRd-ei-TRI"/>
+                                                <constraint firstItem="o8N-yl-VcA" firstAttribute="leading" secondItem="Lel-nc-D6b" secondAttribute="trailing" constant="8" id="Www-Of-qTA"/>
+                                                <constraint firstAttribute="trailing" secondItem="gtA-aO-Oys" secondAttribute="trailing" constant="27" id="mkW-ku-sad"/>
+                                                <constraint firstItem="FnW-a3-7MT" firstAttribute="top" secondItem="seB-rp-DHw" secondAttribute="top" constant="21" id="myJ-jx-rUL"/>
+                                                <constraint firstItem="Lel-nc-D6b" firstAttribute="leading" secondItem="seB-rp-DHw" secondAttribute="leading" constant="15" id="nXt-GJ-ig1"/>
+                                                <constraint firstItem="gtA-aO-Oys" firstAttribute="leading" secondItem="FnW-a3-7MT" secondAttribute="trailing" constant="8" id="qyH-3s-CKE"/>
+                                                <constraint firstAttribute="bottom" secondItem="2dW-2l-YbI" secondAttribute="bottom" constant="8" id="u4v-3W-9Gr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="transDate" destination="o8N-yl-VcA" id="tkT-na-hRw"/>
+                                            <outlet property="transIcon" destination="Lel-nc-D6b" id="H0t-Rn-Fbb"/>
+                                            <outlet property="transPrice" destination="gtA-aO-Oys" id="Gfr-MI-dga"/>
+                                            <outlet property="transStatusLabel" destination="Mhs-51-2gK" id="piX-lT-UO0"/>
+                                            <outlet property="transStatusView" destination="2dW-2l-YbI" id="9eR-kj-F5m"/>
+                                            <outlet property="transTitle" destination="FnW-a3-7MT" id="L98-kW-Aby"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FmG-PO-ALB" id="fme-KF-b3Q"/>
+                                    <outlet property="delegate" destination="FmG-PO-ALB" id="NvL-48-TYv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c3k-h4-hvS" firstAttribute="leading" secondItem="owK-tr-QRx" secondAttribute="leading" id="GYq-tk-j7D"/>
+                            <constraint firstItem="c3k-h4-hvS" firstAttribute="bottom" secondItem="owK-tr-QRx" secondAttribute="bottom" id="Hgb-aq-lt5"/>
+                            <constraint firstItem="c3k-h4-hvS" firstAttribute="top" secondItem="owK-tr-QRx" secondAttribute="top" id="Iaf-q5-hRZ"/>
+                            <constraint firstItem="c3k-h4-hvS" firstAttribute="trailing" secondItem="owK-tr-QRx" secondAttribute="trailing" id="L8T-Zp-Oxu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="owK-tr-QRx"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="c3k-h4-hvS" id="u49-z4-915"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOb-tj-hAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3390" y="1660.0352112676057"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tu7-L8-6Li">
+            <objects>
+                <viewController id="zDY-99-LHF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KDL-cQ-bvA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="449"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Withdraw Options Available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTL-nI-q7Q">
+                                <rect key="frame" x="10" y="214" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zp1-z6-eZR"/>
+                                    <constraint firstAttribute="width" constant="300" id="qcs-DK-UMB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kTL-nI-q7Q" firstAttribute="centerX" secondItem="KDL-cQ-bvA" secondAttribute="centerX" id="oFh-aG-Ss1"/>
+                            <constraint firstItem="kTL-nI-q7Q" firstAttribute="centerY" secondItem="KDL-cQ-bvA" secondAttribute="centerY" id="suL-si-dhe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LKw-PO-gWB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0o5-53-VQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2678" y="1661"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Qv-tw-sqX">
+            <objects>
+                <viewController id="rBO-WT-b9F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PBb-nC-0y1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="449"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Payout History Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZX-9x-iDT">
+                                <rect key="frame" x="10" y="214" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bKW-yT-sok"/>
+                                    <constraint firstAttribute="width" constant="300" id="qtt-G8-SjC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9ZX-9x-iDT" firstAttribute="centerY" secondItem="PBb-nC-0y1" secondAttribute="centerY" id="sL1-gy-BZB"/>
+                            <constraint firstItem="9ZX-9x-iDT" firstAttribute="centerX" secondItem="PBb-nC-0y1" secondAttribute="centerX" id="u9I-zI-Sve"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wPE-cu-0Af"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hu-Yf-Efu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1928" y="1661"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="WZH-5l-NcF">
+            <objects>
+                <navigationController storyboardIdentifier="privacyAndTermsNVC" id="qAr-if-LAE" customClass="NavigationViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vyn-LM-Q8w">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zZw-ep-cXy" kind="relationship" relationship="rootViewController" id="xfP-qn-A9m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2V-cw-40s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="3880"/>
+        </scene>
+        <!--Privacy And Terms View Controller-->
+        <scene sceneID="4Bt-Eg-Piy">
+            <objects>
+                <viewController storyboardIdentifier="privacyAndTermsVC" id="zZw-ep-cXy" customClass="PrivacyAndTermsViewController" customModule="CashApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S2l-gF-Sg8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSQ-dQ-Z5x">
+                                <rect key="frame" x="8" y="72" width="304" height="488"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This Privacy Policy sets out how the " CashApp " uses and protects the information of our users.
+
+Should we ask you to provide certain information by which you can be identified when using this app, then you can be assured that it will only be used in accordance with this privacy statement.
+
+“CashApp” may change this policy from time to time by updating this page. You should check this page from time to time to acknowledge the changes operated.
+
+This information is requested in order to understand your needs and provide you with a better service, and in particular for the following reasons:
+
+•	We may use the information in order to improve the quality of our products and services.
+•	By using the e-mail address which you have provided, we may periodically send promotional emails about new products, special offers or other information which we think you may find interesting.
+From time to time, we may also contact you for market research purposes. We may contact you by email, phone, fax or mail. We may use the information to customise the website according to your interests. We may share your information with our partners on issues related to marketing or for promotional purposes. We will never sell your contact information to third parts.
+
+Security
+We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure, we have created suitable physical, electronic and managerial procedures in order to safeguard and secure the information we collect online.
+
+How we use cookies
+A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences. We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page traffic and improve our website in order to tailor it to the customer needs. We only use this information for statistical analysis purposes. After that the data is removed from the system. Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but if you prefer, you can usually modify your browser setting to decline cookies. However, this may prevent you from taking full advantage of the website.
+
+Links to other websites
+Our website may contain links to other websites of interest. However, once you have used these links to leave our site, you should note that we do not have any control over those other websites. Therefore, we cannot be held responsible for the protection and privacy of any information which you provide whilst visiting such sites. Those sites are not run by this privacy statement. You should exercise caution and look at the privacy statement applicable to the website in question.
+
+Second Part
+Controlling your personal information
+We use this information to improve our platform in order to offer the best experience to our users. We use technologies like cookies (small files stored on your browser), web beacons, or unique device identifiers to identify your computer or device so we can deliver a better experience. Our systems also log information like your browser, operating system and IP address. We also may collect personally identifiable information that you provide to us, such as Facebook ID, Facebook email, Encrypted IMEI. If authorized by you, we may also access profile and other information from services like Facebook. Our systems may associate this personal information with your activities in the course of providing service to you (such as pages you view or things you click on or search for). You can request to see or delete your personal data. We keep personal data until you delete it. We remove personally identifiable information and other preferences associated with your account promptly after you delete your account. We may retain other data indefinitely. You control whether we share personal data with partners. We may share personally identifiable information with trusted partners in order to provide you with relevant advertising, offers or services. Contact us if you want to opt-out of this sharing at the following address: support@cashapp.biz Please allow sufficient time for us to process your request. In order to serve you, we may share your personal and anonymous information with other companies, including vendors and contractors. Their use of information is limited to these purposes, and subject to agreements that require them to keep the information confidential. Our vendors provide assurance that they take reasonable steps to safeguard the data they hold on our behalf, although data security cannot be guaranteed. Analytics companies may access anonymous data (such as your IP address or device ID) to help us understand how our services are used. They use this data solely on our behalf. They do not share it except in aggregate form; no data is shared as to any individual user.
+
+Privacy Policy and Choices
+We take reasonable steps to secure your personally identifiable information against unauthorized access or disclosure.We do have SSL ertificate and We encrypt transmission of data on pages where you provide payment information. However, no security or encryption method can be guaranteed to protect information from hackers or human error. Information we collect may be stored or processed on computers located in any country where we do business. Special situations may require disclosure of your data. To operate the service, we also may make identifiable and anonymous information available to third parties in these limited circumstances: (1) with your express consent, (2) when we have a good faith belief it is required by law, (3) when we have a good faith belief it is necessary to protect our rights or property, or (4) to any successor or purchaser in a merger, acquisition, liquidation, dissolution or sale of assets. Your consent will not be required for disclosure in these cases, but we will attempt to notify you, to the extent permitted by law to do so. You can review more privacy-related information.
+
+Third Part
+Terms of Use
+BY USING THIS SITE, YOU AGREE TO BE BOUND BY THESE TERMS OF USE. IF YOU DO NOT WISH TO BE BOUND BY THE THESE TERMS OF USE, PLEASE EXIT THE SITE NOW. YOUR REMEDY FOR DISSATISFACTION WITH THIS SITE, OR ANY PRODUCTS, SERVICES, CONTENT, OR OTHER INFORMATION AVAILABLE ON OR THROUGH THIS SITE, IS TO STOP USING THE SITE AND/OR THOSE PARTICULAR PRODUCTS OR SERVICES. YOUR AGREEMENT WITH US REGARDING COMPLIANCE WITH THESE TERMS OF USE BECOMES EFFECTIVE IMMEDIATELY UPON COMMENCEMENT OF YOUR USE OF THIS SITE. We expressly reserve the right to change these Terms of Use from time to time without notice to you. You acknowledge and agree that it is your responsibility to review this site and these Terms of Use from time to time and to familiarize yourself with any modifications. Your continued use of this site after such modifications will constitute acknowledgement of the modified Terms of Use and agreement to abide and be bound by the modified Terms of Use. As used in these Terms of Use, references to our "Affiliates" include our owners, subsidiaries, affiliated companies, officers, directors, suppliers, partners, sponsors, and advertisers, and includes (without limitation) all parties involved in creating, producing, and/or delivering this site and/or its contents.
+2. Description of Services
+We may have different types of services depends on the country or region. This is due to the difference between country service limitations. We reserve the sole right to either modify or discontinue the site, including any of the site’s features, at any time with or without notice to you. We will not be liable to you or any third party should we exercise such right. Any new features that augment or enhance the then-current services on this site shall also be subject to these Terms of Use.
+
+3. Registration Data and Privacy
+In order to use our services, you will be required to use your Facebook/Google+/Any Email account. By it means we may collect your account information. You may receive our news and updated information via Facebook/Email.
+
+4. Conduct on Site
+Your use of the site is subject to all applicable laws and regulations, and you are solely responsible for the substance of your communications through the site. By posting information in or otherwise using any communications service, chat room, message board, newsgroup, software library, or other interactive service that may be available to you on or through this site, you agree that you will not upload, share, post, or otherwise distribute or facilitate distribution of any content -- including text, communications, software, images, sounds, data, or other information - that:
+
+a)	Is unlawful, threatening, abusive, harassing, defamatory, libellous, deceptive, fraudulent, invasive of another’s privacy, tortious, contains explicit or graphic descriptions or accounts of sexual acts (including but not limited to sexual language of a violent or threatening nature directed at another individual or group of individuals), or otherwise violates our rules or policies;
+b)	Victimizes, harasses, degrades, or intimidates an individual or group of individuals on the basis of religion, gender, sexual orientation, race, ethnicity, age, or disability;
+c)	Infringes on any patent, trademark, trade secret, copyright, right of publicity, or other proprietary right of any party;
+d)	Constitutes unauthorized or unsolicited advertising, junk or bulk email (also known as "spamming"), chain letters, any other form of unauthorized solicitation, or any form of lottery or gambling;
+e)	contains software viruses or any other computer code, files, or programs that are designed or intended to disrupt, damage, or limit the functioning of any software, hardware, or telecommunications equipment or to damage or obtain unauthorized access to any data or other information of any third party
+We neither endorse nor assume any liability for the contents of any material uploaded or submitted by third party users of the site. We generally do not pre-screen, monitor, or edit the content posted by users of communications services, chat rooms, message boards, newsgroups, software libraries, or other interactive services that may be available on or through this site. However, we and our agents have the right at their sole discretion to remove any content that, in our judgment, does not comply with these Terms of Use and any other rules of user conduct for our site, or is otherwise harmful, objectionable, or inaccurate. We are not responsible for any failure or delay in removing such content. You hereby consent to such removal and waive any claim against us arising out of such removal of content. See "Use of Your Materials" below for a description of the procedures to be followed in the event that any party believes that content posted on this site infringes on any patent, trademark, trade secret, copyright, right of publicity, or other proprietary right of any party. In addition, you may not use your account to breach security of another account or attempt to gain unauthorized access to another network or server. Not all areas of the site may be available to you or other authorized users of the site. You shall not interfere with anyone else’s use and enjoyment of the site or other similar services. Users who violate systems or network security may incur criminal or civil liability. You agree that we may at any time, and at our sole discretion, terminate your membership, account, or other affiliation with our site without prior notice to you for violating any of the above provisions. In addition, you acknowledge that we will cooperate fully with investigations of violations of systems or network security at other sites, including cooperating with law enforcement authorities in investigating suspected criminal violations. When using CashApp or third parties with fraudulent and unusual behaviours such as hack your device or our server, using inappropriate devices, amending or editing datas which are meant to be collected from us, and sharing inappropriate fraudulent actions will be treated as prohibiting our Terms and Conditions, therefore, not only your earnings will be appeared as zero but also we may cancel all your earnings and your registration can be deleted from us what so ever.
+
+5. Third Party Sites and Information
+This site may link you to other sites on the Internet or otherwise include references to information, documents, software, materials and/or services provided by other parties. These sites may contain information or material that some people may find inappropriate or offensive. These other sites and parties are not under our control, and you acknowledge that we are not responsible for the accuracy, copyright compliance, legality, decency, or any other aspect of the content of such sites, nor are we responsible for errors or omissions in any references to other parties or their products and services. The inclusion of such a link or reference is provided merely as a convenience and does not imply endorsement of, or association with, the site or party by us, or any warranty of any kind, either express or implied.
+
+6. Intellectual Property Information
+Copyright CashApp – All Rights Reserved. For purposes of these Terms of Use, "content" is defined as any information, data, communications, software, photos, video, graphics, music, sounds, and other material and services that can be viewed by users on our site. This includes message boards, chat, and other original content. By accepting these Terms of Use, you acknowledge and agree that all content presented to you on this site is protected by copyrights, trademarks, service marks, patents or other proprietary rights and laws, and is the sole property of CashApp and/or its Affiliates. You are only permitted to use the content as expressly authorized by us or the specific content provider. Except for a single copy made for personal use only, you may not copy, reproduce, modify, republish, upload, post, transmit, or distribute any documents or information from this site in any form or by any means without prior written permission from us or the specific content provider, and you are solely responsible for obtaining permission before reusing any copyrighted material that is available on this site. Any unauthorized use of the materials appearing on this site may violate copyright, trademark and other applicable laws and could result in criminal or civil penalties. Neither we or our Affiliates warrant or represent that your use of materials displayed on, or obtained through, this site will not infringe the rights of third parties. See "User’s Materials" below for a description of the procedures to be followed in the event that any party believes that content posted on this site infringes on any patent, trademark, trade secret, copyright, right of publicity, or other proprietary right of any party. All custom graphics, icons, logos and service names are registered trademarks, trademarks or service marks of CashApp or its Affiliates. All other trademarks or service marks are property of their respective owners. Nothing in these Terms of Use grants you any right to use any trademark, service mark, logo, and/or the name of CashApp or its Affiliates.
+
+7. Unauthorized Use of Materials,
+Subject to our Privacy Policy, any communication or material that you transmit to this site or to us, whether by electronic mail, post, or other means, for any reason, will be treated as non-confidential and non-proprietary. While you retain all rights in such communications or material, you grant us and our agents and affiliates a non-exclusive, paid-up, perpetual, and worldwide right to copy, distribute, display, perform, publish, translate, adapt, modify, and otherwise use such material for any purpose regardless of the form or medium (already known or not currently known) in which it is used. Please do not submit confidential or proprietary information to us unless we have mutually agreed in writing otherwise. We are also unable to accept your unsolicited ideas or proposals, so please do not submit them to us in any circumstance. We respect the intellectual property of others, and we ask you to do the same.
+
+Part 4
+Please do not submit confidential or proprietary information to us unless we have mutually agreed in writing otherwise. We are also unable to accept your unsolicited ideas or proposals, so please do not submit them to us in any circumstance. We respect the intellectual property of others, and we ask you to do the same.
+
+8. Disclaimer of Warranties
+ALL MATERIALS AND SERVICES ON THIS SITE ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, OR THE WARRANTY OF NON-INFRINGEMENT. WITHOUT LIMITING THE FOREGOING, WE MAKE NO WARRANTY THAT: (A) THE SERVICES AND MATERIALS WILL MEET YOUR REQUIREMENTS, (B) THE SERVICES AND MATERIALS WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE, (C) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE SERVICES OR MATERIALS WILL BE EFFECTIVE, ACCURATE OR RELIABLE, OR (D) THE QUALITY OF ANY PRODUCTS, SERVICES, OR INFORMATION PURCHASED OR OBTAINED BY YOU FROM THE SITE FROM US OR OUR AFFILIATES WILL MEET YOUR EXPECTATIONS OR BE FREE FROM MISTAKES, ERRORS OR DEFECTS. THIS SITE COULD INCLUDE TECHNICAL OR OTHER MISTAKES, INACCURACIES OR TYPOGRAPHICAL ERRORS. WE MAY MAKE CHANGES TO THE MATERIALS AND SERVICES AT THIS SITE, INCLUDING THE PRICES AND DESCRIPTIONS OF ANY PRODUCTS LISTED HEREIN, AT ANY TIME WITHOUT NOTICE. THE MATERIALS OR SERVICES AT THIS SITE MAY BE OUT OF DATE, AND WE MAKE NO COMMITMENT TO UPDATE SUCH MATERIALS OR SERVICES. THE USE OF THE SERVICES OR THE DOWNLOADING OR OTHER ACQUISITION OF ANY MATERIALS THROUGH THIS SITE IS DONE AT YOUR OWN DISCRETION AND RISK AND WITH YOUR AGREEMENT THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM SUCH ACTIVITIES. Through your use of the site, you may have the opportunities to engage in commercial transactions with other users and vendors. You acknowledge that all transactions relating to any merchandise or services offered by any party, including, but not limited to the purchase terms, payment terms, warranties, guarantees, maintenance and delivery terms relating to such transactions, are agreed to solely between the seller or purchaser of such merchandize and services and you. WE MAKE NO WARRANTY REGARDING ANY TRANSACTIONS EXECUTED THROUGH, OR IN CONNECTION WITH THIS SITE, AND YOU UNDERSTAND AND AGREE THAT SUCH TRANSACTIONS ARE CONDUCTED ENTIRELY AT YOUR OWN RISK. ANY WARRANTY THAT IS PROVIDED IN CONNECTION WITH ANY PRODUCTS, SERVICES, MATERIALS, OR INFORMATION AVAILABLE ON OR THROUGH THIS SITE FROM A THIRD PARTY IS PROVIDED SOLELY BY SUCH THIRD PARTY, AND NOT BY US OR ANY OTHER OF OUR AFFILIATES. The content available through this site often represents the opinions and judgments of an information provider, site user, or other person or entity not connected with us. We do not endorse, nor are we responsible for the accuracy or reliability of, any opinion, advice, or statement made by anyone other than an authorized CashApp spokesperson speaking in his/her official capacity. Please refer to the specific editorial policies posted on various sections of this site for further information, which policies are incorporated by reference into these Terms of Use. As user, you understand and agree that temporary interruptions of the services available through this site may occur as normal events. You further understand and agree that we have no control over third party networks you may access in the course of the use of this site, and therefore, delays and disruption of other network transmissions are completely beyond our control. You understand and agree that the services available on this site are provided "AS IS" and that we assume no responsibility for the timeliness, deletion, mis-delivery or failure to store any user communications or personalization settings. SOME STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES, SO SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.
+
+9. LIMITATION OF LIABILITY
+IN NO EVENT SHALL CASHAPP OR OUR AFFILIATES BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY SPECIAL, PUNITIVE, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, THOSE RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OF THIS SITE OR OF ANY WEB SITE REFERENCED OR LINKED TO FROM THIS SITE. FURTHER, WE SHALL NOT BE LIABLE IN ANY WAY FOR THIRD PARTY GOODS AND SERVICES OFFERED THROUGH THIS SITE OR FOR ASSISTANCE IN CONDUCTING COMMERCIAL TRANSACTIONS THROUGH THIS SITE, INCLUDING WITHOUT LIMITATION THE PROCESSING OF ORDERS. SOME JURISDICTIONS PROHIBIT THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.
+
+10. Indemnification
+Upon a request by us, you agree to defend, indemnify, and hold us and our affiliates harmless from all liabilities, claims, and expenses, including attorney’s fees, that arise from your use or misuse of this site. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will cooperate with us in asserting any available defenses.
+
+11. Security and Password
+You are solely responsible for maintaining the confidentiality of your password and account and for any and all statements made and acts or omissions that occur through the use of your password and account. Therefore, you must take steps to ensure that others do not gain access to your password and account. Our personnel will never ask you for your password. You may not transfer or share your account with anyone, and we reserve the right to immediately terminate your account if you do transfer or share your account.
+
+12. Participation in Promotions
+From time to time, this site may include advertisements offered by third parties. You may enter into correspondence with or participate in promotions of the advertisers showing their products on this site. Any such correspondence or promotions, including the delivery of and the payment for goods and services, and any other terms, conditions, warranties or representations associated with such correspondence or promotions, are solely between you and the advertiser. We assume no liability, obligation or responsibility for any part of any such correspondence or promotion.
+
+13. E-mail, Messaging, Blogging, and Chat Services
+We may make email, messaging, blogging, or chat services (collectively, "Communications") available to users of our site or CashApp Facebook page, either directly or through a third-party provider. We make available separate supplemental agreements characterizing the relationship between you and us that, except where expressly noted or contradictory, includes these Terms. We will not inspect or disclose the contents of private Communications except with the consent of the sender or the recipient, communications about CashApp or in the narrowly-defined situations provided under the Electronic Communications Privacy Act, or as other required by law or by court or governmental order. Further information is available in our Privacy Policy. We may employ automated monitoring devices or techniques to protect our users from mass unsolicited communications (also known as "spam") and/or other types of electronic communications that we deem inconsistent with our business purposes. However, such devices or techniques are not perfect, and we will not be responsible for any legitimate communication that is blocked, or for any unsolicited communication that is not blocked. 14. International Use Although this site may be accessible worldwide, we make no representation that materials on this site are appropriate or available for use in locations outside the United States, and accessing them from territories where their contents are illegal is prohibited. Those who choose to access this site from other locations do so on their own initiative and are responsible for compliance with local laws. Any offer for any product, service, and/or information made in connection with this site is void where prohibited.
+
+14. International Use
+Although this site may be accessible worldwide, we make no representation that materials on this site are appropriate or available for use in locations outside the United States, and accessing them from territories where their contents are illegal is prohibited. Those who choose to access this site from other locations do so on their own initiative and are responsible for compliance with local laws. Any offer for any product, service, and/or information made in connection with this site is void where prohibited.
+
+15. Termination of Use
+You agree that we may, in our sole discretion, terminate or suspend your access to all or part of the site with or without notice and for any reason, including, without limitation, breach of these Terms of Use. Any suspected fraudulent, abusive or illegal activity may be grounds for terminating your relationship and may be referred to appropriate law enforcement authorities. Upon termination or suspension, regardless of the reasons therefore, your right to use the services available on this site immediately ceases, and you acknowledge and agree that we may immediately deactivate or delete your account and all related information and files in your account and/or bar any further access to such files or this site. We shall not be liable to you or any third party for any claims or damages arising out of any termination or suspension or any other actions taken by us in connection with such termination or suspension.
+
+16. Notifications
+All notices to a party shall be in writing and shall be made either via email or conventional mail. Notices to us must be sent to the attention of our Customer Service at: support@cashapp.biz
+
+17. Entire Agreement
+These terms and conditions constitute the entire agreement and understanding between us concerning the subject matter of this agreement and supersedes all prior agreements and understandings of the parties with respect to that subject matter. These Terms of Use may not be altered, supplemented, or amended by the use of any other document(s). Any attempt to alter, supplement or amend this document or to enter an order for products or services which are subject to additional or altered terms and conditions shall be null and void, unless otherwise agreed to in a written agreement signed by you and us. To the extent that anything in or associated with this site is in conflict or inconsistent with these Terms of Use, these Terms of Use shall take precedence.
+
+18. Miscellaneous
+In any action to enforce these Terms of Use, the prevailing party will be entitled to costs and attorneys’ fees. Any cause of action brought by you against us or our Affiliates must be instituted with one year after the cause of action arises or be deemed forever waived and barred. You may not assign your rights and obligations under these Terms of Use to any party, and any purported attempt to do so will be null and void. CashApp may freely assign any of your rights and obligations under these Terms of Use. You agree not to sell, resell, reproduce, duplicate, copy or use for any commercial purposes any portion of this site, or use of or access to this site. In addition to any excuse provided by applicable law, we shall be excused from liability for non-delivery or delay in delivery of products and services available through our site arising from any event beyond our reasonable control, whether or not foreseeable by either party, including but not limited to, labour disturbance, war, fire, accident, adverse weather, inability to secure transportation, governmental act or regulation, and other causes or events beyond our reasonable control, whether or not similar to those which are enumerated above. If any part of these Terms of Use is held invalid or unenforceable, that portion shall be construed in a manner consistent with applicable law to reflect, as nearly as possible, the original intentions of the parties, and the remaining portions shall remain in full force and effect. Any failure by us to enforce or exercise any provision of these Terms of Use or related rights shall not constitute a waiver of that right or provision.
+
+19. Contact Information
+Any enquiries or concerns please contact on: support@cashapp.biz</string>
+                                <color key="textColor" red="0.27450980390000002" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VYf-tf-Px7" firstAttribute="bottom" secondItem="eSQ-dQ-Z5x" secondAttribute="bottom" constant="8" id="0sp-rn-1Nk"/>
+                            <constraint firstItem="VYf-tf-Px7" firstAttribute="trailing" secondItem="eSQ-dQ-Z5x" secondAttribute="trailing" constant="8" id="F2H-qg-LZ7"/>
+                            <constraint firstItem="eSQ-dQ-Z5x" firstAttribute="top" secondItem="VYf-tf-Px7" secondAttribute="top" constant="8" id="RKX-j7-VUL"/>
+                            <constraint firstItem="eSQ-dQ-Z5x" firstAttribute="leading" secondItem="VYf-tf-Px7" secondAttribute="leading" constant="8" id="Tdb-s3-Z6b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VYf-tf-Px7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yvC-3z-gjB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOu-Ui-nl3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="3880"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background2" width="750" height="1334"/>
+        <image name="dollar-icon" width="202" height="202"/>
+        <image name="gold-medal" width="512" height="512"/>
+        <image name="number_one" width="512" height="512"/>
+    </resources>
+</document>

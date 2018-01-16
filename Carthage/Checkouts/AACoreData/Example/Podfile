@@ -1,0 +1,7 @@
+use_frameworks!
+
+target 'AACoreData_Example' do
+  pod 'AACoreData', :path => '../'
+
+
+end

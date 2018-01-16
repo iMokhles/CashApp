@@ -1,0 +1,6 @@
+framework module AACoreData {
+  umbrella header "AACoreData-umbrella.h"
+
+  export *
+  module * { export * }
+}
